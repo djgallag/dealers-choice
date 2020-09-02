@@ -1,5 +1,6 @@
 const router = require("express").Router()
-//import models from /db
+const db = require('./db')
+
 
 //routes go here
 

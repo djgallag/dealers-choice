@@ -1,15 +1,14 @@
 const db = require('./db');
-const { Sins, Stats } = require('./db')
+const { syncAndSeed, Character, Stat } = require('./models/Sins.js')
 
 //state your model associations (hasOne etc)
-Sins.hasOne(Stats)
-Stats.BelongsTo(Sins)
+Character.hasOne(Stat)
+Stat.belongsTo(Character)
 
 //export your db and Models (so they all can be imported from a single central location)
 module.exports = {
     db,
-    models: {
-        Sins,
-        Stats
-    }
+    syncAndSeed,
+    Character,
+    Stat
 }

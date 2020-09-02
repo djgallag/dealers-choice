@@ -1,0 +1,11 @@
+body {
+    background-image: url('https://wallpapercave.com/wp/wp5038553.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.characterImage {
+
+width: 150px;
+height: 150px;
+}
